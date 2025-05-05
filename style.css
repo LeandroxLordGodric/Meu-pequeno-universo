@@ -21,11 +21,10 @@ html, body {
   position: relative;
 }
 
-.slideshow-container img {
+.slideshow img {
   width: 100%;
   height: auto;
-  display: block;
-  max-height: 500px;
+  max-height: 400px;
   object-fit: cover;
 }
 
