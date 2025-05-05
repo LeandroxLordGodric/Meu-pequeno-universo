@@ -10,9 +10,10 @@ body {
 }
 
 .container {
-  max-width: 600px;
-  margin: 50px auto;
-  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
 p {
