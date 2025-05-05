@@ -4,61 +4,59 @@ body {
   background: #000;
   color: #fff;
   overflow-x: hidden;
-  overflow-y: auto;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+/* Garante que o conteúdo seja rolagem normal */
+html, body {
+  height: auto;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
-p {
-  word-wrap: break-word;
+.slideshow-container {
   max-width: 100%;
-  padding: 0 10px;
-  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
 }
 
-.slideshow img {
+.slideshow-container img {
   width: 100%;
-  max-height: 400px;
+  height: auto;
+  display: block;
+  max-height: 500px;
   object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 0 0 20px #fff4;
 }
 
-h1 {
-  margin-top: 20px;
-  font-size: 24px;
-  color: #fff;
+#spotify {
+  margin: 20px 0;
 }
 
-/* Chuva de coração */
-.emoji-rain {
+#text-section {
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Garante que emojis da chuva não impeçam rolagem */
+.emoji {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  animation: fall 5s linear infinite;
   pointer-events: none;
   z-index: 999;
 }
 
-.heart {
-  position: absolute;
-  font-size: 24px;
-  animation: fall 4s linear infinite;
-  color: red;
-  user-select: none;
-}
-
 @keyframes fall {
-  to {
-    transform: translateY(100vh);
+  0% {
+    top: -5%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    top: 105%;
     opacity: 0;
   }
 }
