@@ -1,13 +1,13 @@
 // Imagens do slideshow
 const images = [
-  "img1.jpg",
-  "img2.jpg",
-  "img3.jpg",
-  "img4.jpg",
-  "img5.jpg",
-  "img6.jpg",
-  "img7.jpg",
-  "img8.jpg"
+  "img1.jpg.jpg",
+  "img2.jpg.jpg",
+  "img3.jpg.jpg",
+  "img4.jpg.jpg",
+  "img5.jpg.jpg",
+  "img6.jpg.jpg",
+  "img7.jpg.jpg",
+  "img8.jpg.jpg"
 ];
 
 let index = 0;
