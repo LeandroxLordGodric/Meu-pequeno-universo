@@ -4,9 +4,9 @@ body {
   background: #000;
   color: #fff;
   overflow-x: hidden;
+  overflow-y: auto;
   font-family: 'Segoe UI', sans-serif;
   text-align: center;
-  overflow: hidden;
 }
 
 .container {
