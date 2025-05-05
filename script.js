@@ -19,14 +19,20 @@ setInterval(() => {
 }, 3000); // troca a cada 3 segundos
 
 // Chuva de coração
-function createHeart() {
-  const heart = document.createElement("div");
-  heart.classList.add("heart");
-  heart.innerText = "❤️";
-  heart.style.left = Math.random() * 100 + "vw";
-  document.querySelector(".emoji-rain").appendChild(heart);
+function createEmoji() {
+  const emoji = document.createElement('div');
+  emoji.classList.add('emoji');
+  emoji.innerText = '💖';
 
-  setTimeout(() => heart.remove(), 4000);
+  emoji.style.left = Math.random() * 100 + 'vw';
+  emoji.style.fontSize = Math.random() * 24 + 12 + 'px';
+  emoji.style.animationDuration = Math.random() * 2 + 3 + 's';
+
+  document.body.appendChild(emoji);
+
+  setTimeout(() => {
+    emoji.remove();
+  }, 5000);
 }
 
-setInterval(createHeart, 200);
+setInterval(createEmoji, 300);
