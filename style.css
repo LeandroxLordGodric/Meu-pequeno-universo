@@ -41,21 +41,21 @@ html, body {
 /* Garante que emojis da chuva não impeçam rolagem */
 .emoji {
   position: fixed;
-  animation: fall 5s linear infinite;
+  top: 0;
   pointer-events: none;
-  z-index: 999;
+  z-index: 2;
+  animation: fall linear infinite;
+  animation-timing-function: ease-in-out;
+  will-change: transform, opacity;
 }
 
 @keyframes fall {
   0% {
-    top: -5%;
-    opacity: 0;
-  }
-  10% {
+    transform: translateY(-100%);
     opacity: 1;
   }
   100% {
-    top: 105%;
+    transform: translateY(100vh);
     opacity: 0;
   }
 }
